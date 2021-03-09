@@ -5,6 +5,8 @@ POC project on Dagger2
 Employee is dependent on Salary and ContactDetails. <br>
 ContactDetails is dependent on Address.
 
+![dependencyGraph](https://user-images.githubusercontent.com/76177174/110505735-706e1380-8124-11eb-9b68-fadb980e637d.jpg)
+
 
 ### Things to keep in mind :
 Annotations : 
