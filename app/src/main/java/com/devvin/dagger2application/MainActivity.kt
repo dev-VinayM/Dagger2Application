@@ -17,10 +17,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         DaggerEmployeeComponent.builder()
-                .salaryModule(SalaryModule(4000, 15000, 6000, "Vinay"))
-                .build()
-                .inject(this)
+            .salaryModule(
+                SalaryModule(
+                    4000, 15000, 6000, "Vinay",
+                    9898789856, "email@gmail.com",
+                    "houseNo.", "road", "city", "country"
+                )
+            )
+            .build()
+            .inject(this)
         findViewById<TextView>(R.id.textView).text =
-                employee.salary.allowance.toString() + "/" + employee.name
+            employee.salary.allowance.toString() + "/" + employee.name
     }
 }
